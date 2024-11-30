@@ -1,0 +1,114 @@
+
+
+:root{
+
+  --main-grey-color: #464646;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  color: var(--main-grey-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.container{
+  margin: 0 25px;
+
+  @media screen and (max-width: 374px){
+    margin: 0 20px;
+  }
+  @media screen and (min-width: 1200px){
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+.section__sub-title{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #377dff;
+  text-align: center;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px){
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.section__title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #1d1d1d;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 768px){
+    font-size: 55px;
+  }
+
+}
+
+.bgc-blue{
+  background-color: #377DFF;
+}
+
+.bgc-red{
+  background-color: #FF2D2D;
+}
+
+.bgc-green{
+  background-color: #7CE761;
+}
+
+.bgc-orange{
+  background-color: #FFA800;
+}
+
+@mixin button-hover($hover-color, $hover-bg-color) {
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-bg-color;
+  }
+}
+
+.decor-ellipse{
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.blue-ball{
+  background-image: linear-gradient(180deg, rgba(68, 133, 255, 0.8) 0%, #377dff 100%);
+}
+
+.red-ball {
+  background-image: linear-gradient(180deg, #ff8e8e 0%, #f62424 100%);
+}

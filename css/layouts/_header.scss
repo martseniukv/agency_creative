@@ -1,0 +1,136 @@
+
+.header {
+
+  margin-bottom: 70px;
+
+  .container {
+    padding-top: 40px;
+  }
+
+  .header__content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .nav__menu {
+      top: 120%;
+      width: 100%;
+      position: absolute;
+      transform: translateX(-130%);
+      transition: 1s ease;
+      background: #fff;
+      z-index: 5;
+      padding: 20px;
+      box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+
+      .nav__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.125rem;
+
+        .nav__item {
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+
+          &::after {
+            left: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            background-color: #1d1d1d;
+            height: 3px;
+            transition: 0.4s;
+            margin-top: 35px;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+
+          .nav__link {
+            padding: 5px;
+            font-size: 1.125rem;
+            font-weight: 1.33333;
+            text-transform: capitalize;
+            color: #1d1d1d;
+            letter-spacing: 0.01em;
+          }
+        }
+      }
+    }
+
+    .nav__menu.active {
+      transform: translateX(0);
+    }
+
+    .nav {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu__btn{
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+
+  .header {
+
+    .header__content{
+
+      gap: 50px;
+      .nav__menu{
+        width: inherit;
+        padding: 0;
+        position: relative;
+        transform: translateX(0);
+        box-shadow: none;
+
+        .nav__list{
+          gap: 1.125rem;
+          flex-direction: row;
+        }
+      }
+      .menu__btn{
+        display: block;
+        border: 1px solid #377dff;
+        border-radius: 24px;
+        padding: 10px 35px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+        color: #377dff;
+        transition: 0.7s;
+
+        @include button-hover(#fff, #377dff);
+      }
+      .burger {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1140px) {
+    .header {
+      .header__content {
+        .menu__btn {
+          padding: 12px 50px;
+        }
+      }
+    }
+  }
+}
