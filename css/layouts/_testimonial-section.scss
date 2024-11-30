@@ -1,0 +1,189 @@
+.testimonial {
+
+  margin-bottom: 100px;
+
+  .ellipses{
+    display: none;
+  }
+
+  .testimonial__cards {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .testimonial__card {
+
+      border-radius: 20px;
+      max-width: 380px;
+      padding: 40px 20px 40px 40px;
+
+      box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
+      background: #fff;
+
+      .card__header {
+
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 35px;
+
+        .header__image {
+          width: 70px;
+        }
+
+        .header__info {
+
+          .header__title {
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.01em;
+            color: #377dff;
+            margin-bottom: 8px;
+          }
+
+          .job__title {
+            font-size: 11px;
+            letter-spacing: 0.01em;
+            color: #464646;
+          }
+        }
+      }
+
+      .card__content {
+
+        .card__description {
+          font-weight: 400;
+          font-size: 14px;
+
+          line-height: 1.71429;
+          letter-spacing: 0.01em;
+          color: #464646;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .owl-carousel .owl-stage-outer {
+    width: 100%;
+  }
+
+  .owl-stage {
+    width: 90%;
+  }
+
+  .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px 24px 5px;
+  }
+
+  .owl-dots {
+    text-align: center;
+
+    .owl-dot {
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #377dff;
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .testimonial {
+
+    margin-bottom: 247px;
+    .testimonial__cards {
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .testimonial__card {
+
+        border-radius: 20px;
+        max-width: 380px;
+        padding: 40px 20px 40px 40px;
+
+        background: #fff;
+
+        .card__header {
+
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          margin-bottom: 35px;
+
+          .header__image {
+            width: 70px;
+          }
+
+          .header__info {
+
+            .header__title {
+              font-weight: 600;
+              font-size: 18px;
+              letter-spacing: 0.01em;
+              color: #377dff;
+            }
+
+            .job__title {
+              font-size: 11px;
+              letter-spacing: 0.01em;
+              color: #464646;
+            }
+          }
+        }
+
+        .card__content {
+
+          .card__description {
+            font-weight: 400;
+            font-size: 14px;
+
+            line-height: 1.71429;
+            letter-spacing: 0.01em;
+            color: #464646;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+
+  .testimonial {
+
+    position: relative;
+    .ellipses {
+      width: 98px;
+      height: 70px;
+      position: absolute;
+      fill: #377dff;
+      transform: rotate(15deg);
+    }
+
+    .ellipse__top{
+      top: -45px;
+      left: 214px;
+    }
+
+    .ellipse__bottom{
+      bottom: 23px;
+      right: 93px;
+    }
+  }
+}
