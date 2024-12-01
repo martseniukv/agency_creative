@@ -9,6 +9,12 @@ burger.addEventListener("click", function () {
     navigation.classList.toggle("active");
 })
 
+document.querySelectorAll('.nav__item').forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.querySelector('.nav__menu').classList.toggle('active');
+    });
+});
+
 $(document).ready(function () {
     $(".scroll-link").click(function (e) {
         e.preventDefault(); 
