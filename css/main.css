@@ -455,6 +455,7 @@ img {
   .hero .hero__image__container .hero__image .hero__comment {
     padding: 27px 20px 25px 21px;
     min-width: 166px;
+    border-radius: 16px;
     height: 166px;
     bottom: 0;
     right: 0;
@@ -913,6 +914,7 @@ img {
     position: relative;
   }
   .portfolio .ellipses {
+    display: block;
     width: 98px;
     height: 70px;
     position: absolute;
@@ -925,13 +927,16 @@ img {
     transform: rotate(-20deg);
   }
   .portfolio .ellipse__middle {
-    top: 300px;
-    left: 485px;
+    top: 55px;
+    left: -30px;
     transform: rotate(15deg);
   }
   .portfolio__cards {
     gap: 69px;
     margin-bottom: 34px;
+  }
+  .portfolio__cards .portfolio__card__item {
+    position: relative;
   }
   .portfolio__cards .portfolio__card__item.active .portfolio__card {
     width: 400px;
@@ -1065,6 +1070,7 @@ img {
     position: relative;
   }
   .testimonial .ellipses {
+    display: block;
     width: 98px;
     height: 70px;
     position: absolute;
