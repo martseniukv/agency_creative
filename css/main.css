@@ -109,9 +109,6 @@ img {
   background-image: linear-gradient(180deg, #ff8e8e 0%, #f62424 100%);
 }
 
-.header {
-  margin-bottom: 70px;
-}
 .header .container {
   padding-top: 40px;
 }
@@ -145,19 +142,8 @@ img {
   display: inline-flex;
   justify-content: center;
 }
-.header .header__content .nav__menu .nav__list .nav__item::after {
-  left: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  background-color: #1d1d1d;
-  height: 3px;
-  transition: 0.4s;
-  margin-top: 35px;
-}
-.header .header__content .nav__menu .nav__list .nav__item:hover::after {
-  width: 100%;
+.header .header__content .nav__menu .nav__list .nav__item:hover .nav__link {
+  color: #377dff;
 }
 .header .header__content .nav__menu .nav__list .nav__item .nav__link {
   padding: 5px;
@@ -195,6 +181,20 @@ img {
     gap: 1.125rem;
     flex-direction: row;
   }
+  .header .header__content .nav__menu .nav__list .nav__item::after {
+    left: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    background-color: #377dff;
+    height: 3px;
+    transition: 0.4s;
+    margin-top: 35px;
+  }
+  .header .header__content .nav__menu .nav__list .nav__item:hover::after {
+    width: 100%;
+  }
   .header .header__content .menu__btn {
     display: block;
     border: 1px solid #377dff;
@@ -221,18 +221,21 @@ img {
   }
 }
 .hero {
+  padding-top: 70px;
   margin-bottom: 100px;
+  position: relative;
+  overflow-x: hidden;
 }
 .hero .decor-ellipse {
   width: 28px;
   height: 28px;
 }
 .hero .ball-left-1 {
-  top: 330px;
+  top: 255px;
   left: -8px;
 }
 .hero .ball-right-1 {
-  top: 150px;
+  top: 50px;
   right: -15px;
 }
 .hero__content {

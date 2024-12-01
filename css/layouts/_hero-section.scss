@@ -1,17 +1,21 @@
 .hero {
+
+  padding-top: 70px;
   margin-bottom: 100px;
+  position: relative;
+  overflow-x: hidden;
 
   .decor-ellipse{
     width: 28px;
     height: 28px;
   }
   .ball-left-1{
-    top: 330px;
+    top: 255px;
     left: -8px;
   }
 
   .ball-right-1{
-    top: 150px;
+    top: 50px;
     right: -15px;
   }
 

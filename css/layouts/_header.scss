@@ -1,8 +1,5 @@
 
 .header {
-
-  margin-bottom: 70px;
-
   .container {
     padding-top: 40px;
   }
@@ -38,20 +35,8 @@
           display: inline-flex;
           justify-content: center;
 
-          &::after {
-            left: 0;
-            content: "";
-            display: block;
-            position: absolute;
-            width: 0;
-            background-color: #1d1d1d;
-            height: 3px;
-            transition: 0.4s;
-            margin-top: 35px;
-          }
-
-          &:hover::after {
-            width: 100%;
+          &:hover .nav__link {
+            color: #377dff;
           }
 
 
@@ -101,6 +86,24 @@
         .nav__list{
           gap: 1.125rem;
           flex-direction: row;
+
+          .nav__item{
+            &::after {
+              left: 0;
+              content: "";
+              display: block;
+              position: absolute;
+              width: 0;
+              background-color: #377dff;
+              height: 3px;
+              transition: 0.4s;
+              margin-top: 35px;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
         }
       }
       .menu__btn{
