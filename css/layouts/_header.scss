@@ -86,7 +86,6 @@
 
     .header__content{
 
-      gap: 50px;
       .nav__menu{
         width: inherit;
         padding: 0;
@@ -95,7 +94,7 @@
         box-shadow: none;
 
         .nav__list{
-          gap: 1.125rem;
+          gap: 50px;
           flex-direction: row;
 
           .nav__item{
@@ -113,6 +112,10 @@
 
             &:hover::after {
               width: 100%;
+            }
+
+            .nav__link {
+              padding: 0;
             }
           }
         }
