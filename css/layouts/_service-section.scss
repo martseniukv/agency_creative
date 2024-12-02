@@ -36,6 +36,11 @@
     font-size: 14px;
     letter-spacing: 0.01em;
     color: #377dff;
+
+    .arrow {
+      width: 20px;
+      height: 24px;
+    }
   }
 
   &__cards {
@@ -67,6 +72,11 @@
         transform: scale(1.1);
       }
 
+      .service__card__icon {
+        width: 42px;
+        height: 42px;
+      }
+
       .card__image__container {
         display: flex;
         justify-content: center;
@@ -96,6 +106,7 @@
   .service {
 
     margin-bottom: 130px;
+
     &__content {
 
       display: flex;
@@ -109,10 +120,11 @@
       max-width: 512px;
       margin-bottom: 32px;
 
-      .section__sub-title{
+      .section__sub-title {
         text-align: left;
       }
-      .section__title{
+
+      .section__title {
 
         font-weight: 700;
         font-size: 55px;
@@ -122,14 +134,14 @@
         text-align: left;
       }
 
-      .service__description{
+      .service__description {
         font-weight: 400;
         font-size: 20px;
         text-align: left;
         margin-bottom: 36px;
       }
 
-      .service__link{
+      .service__link {
         align-self: flex-end;
       }
     }
@@ -144,7 +156,7 @@
   }
 }
 
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1140px) {
 
   .service {
 
