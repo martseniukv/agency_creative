@@ -226,17 +226,13 @@
     margin-bottom: 211px;
 
     .hero__title {
-      font-weight: 800;
       font-size: 64px;
-      letter-spacing: 0.01em;
     }
 
     .hero__description {
       max-width: 800px;
       font-size: 20px;
-
       line-height: 1.5;
-      letter-spacing: 0.01em;
     }
 
     &__btn {
@@ -244,6 +240,9 @@
       padding: 12px 50px;
     }
 
+    &__content {
+      margin-bottom: 95px;
+    }
     .hero__image__container {
 
       margin-bottom: 100px;
@@ -340,9 +339,7 @@
             .comment__header__nick {
 
               .nick__name {
-                font-weight: 600;
                 font-size: 10px;
-                letter-spacing: 0.01em;
                 margin-bottom: 2px;
               }
 
