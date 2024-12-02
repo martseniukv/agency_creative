@@ -11,6 +11,10 @@
     justify-content: space-between;
     position: relative;
 
+    .logo{
+      width:91px;
+      height:33px;
+    }
     .nav__menu {
       top: 120%;
       width: 100%;
@@ -43,7 +47,7 @@
           .nav__link {
             padding: 5px;
             font-size: 1.125rem;
-            font-weight: 1.33333;
+            line-height: 1.33333;
             text-transform: capitalize;
             color: #1d1d1d;
             letter-spacing: 0.01em;
@@ -67,6 +71,11 @@
     }
     .menu__btn{
       display: none;
+    }
+    .burger-menu-icon {
+      width: 29px;
+      height: 25px;
+      stroke: #1D1D1D;
     }
   }
 }

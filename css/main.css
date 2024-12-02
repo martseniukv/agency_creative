@@ -109,6 +109,62 @@ img {
   background-image: linear-gradient(180deg, #ff8e8e 0%, #f62424 100%);
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/bold/Nunito-Bold.eot");
+  src: url("../fonts/nunito/bold/Nunito-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito/bold/Nunito-Bold.woff2") format("woff2"), url("../fonts/nunito/bold/Nunito-Bold.woff") format("woff"), url("../fonts/nunito/bold/Nunito-Bold.ttf") format("truetype"), url("../fonts/nunito/bold/Nunito-Bold.svg#Nunito-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/regular/Nunito-Regular.eot");
+  src: url("../fonts/nunito/regular/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito/regular/Nunito-Regular.woff2") format("woff2"), url("../fonts/nunito/regular/Nunito-Regular.woff") format("woff"), url("../fonts/nunito/regular/Nunito-Regular.ttf") format("truetype"), url("../fonts/nunito/regular/Nunito-Regular.svg#Nunito-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/bold/Quicksand-Bold.eot");
+  src: url("../fonts/quicksand/bold/Quicksand-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand/bold/Quicksand-Bold.woff2") format("woff2"), url("../fonts/quicksand/bold/Quicksand-Bold.woff") format("woff"), url("../fonts/quicksand/bold/Quicksand-Bold.ttf") format("truetype"), url("../fonts/quicksand/bold/Quicksand-Bold.svg#Quicksand-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/semi-bold/Quicksand-SemiBold.eot");
+  src: url("../fonts/quicksand/semi-bold/Quicksand-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand/semi-bold/Quicksand-SemiBold.woff2") format("woff2"), url("../fonts/quicksand/semi-bold/Quicksand-SemiBold.woff") format("woff"), url("../fonts/quicksand/semi-bold/Quicksand-SemiBold.ttf") format("truetype"), url("../fonts/quicksand/semi-bold/Quicksand-SemiBold.svg#Quicksand-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/medium/Quicksand-Medium.eot");
+  src: url("../fonts/quicksand/medium/Quicksand-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand/medium/Quicksand-Medium.woff2") format("woff2"), url("../fonts/quicksand/medium/Quicksand-Medium.woff") format("woff"), url("../fonts/quicksand/medium/Quicksand-Medium.ttf") format("truetype"), url("../fonts/quicksand/medium/Quicksand-Medium.svg#Quicksand-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/regular/Quicksand-Regular.eot");
+  src: url("../fonts/quicksand/regular/Quicksand-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand/regular/Quicksand-Regular.woff2") format("woff2"), url("../fonts/quicksand/regular/Quicksand-Regular.woff") format("woff"), url("../fonts/quicksand/regular/Quicksand-Regular.ttf") format("truetype"), url("../fonts/quicksand/regular/Quicksand-Regular.svg#Quicksand-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/light/Quicksand-Light.eot");
+  src: url("../fonts/quicksand/light/Quicksand-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand/light/Quicksand-Light.woff2") format("woff2"), url("../fonts/quicksand/light/Quicksand-Light.woff") format("woff"), url("../fonts/quicksand/light/Quicksand-Light.ttf") format("truetype"), url("../fonts/quicksand/light/Quicksand-Light.svg#Quicksand-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 .header .container {
   padding-top: 40px;
 }
@@ -117,6 +173,10 @@ img {
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+.header .header__content .logo {
+  width: 91px;
+  height: 33px;
 }
 .header .header__content .nav__menu {
   top: 120%;
@@ -148,7 +208,7 @@ img {
 .header .header__content .nav__menu .nav__list .nav__item .nav__link {
   padding: 5px;
   font-size: 1.125rem;
-  font-weight: 1.33333;
+  line-height: 1.33333;
   text-transform: capitalize;
   color: #1d1d1d;
   letter-spacing: 0.01em;
@@ -166,6 +226,11 @@ img {
 }
 .header .header__content .menu__btn {
   display: none;
+}
+.header .header__content .burger-menu-icon {
+  width: 29px;
+  height: 25px;
+  stroke: #1D1D1D;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,6 +304,12 @@ img {
 .hero .ball-right-1 {
   top: 50px;
   right: -15px;
+}
+.hero .ball-right-2 {
+  display: none;
+}
+.hero .ball-left-2 {
+  display: none;
 }
 .hero__content {
   display: flex;
@@ -323,6 +394,10 @@ img {
 }
 .hero .hero__image__container .hero__image .hero__mark .mark__stars .mark__stars__wrapper {
   display: flex;
+}
+.hero .hero__image__container .hero__image .hero__mark .mark__stars .mark__stars__wrapper .star-image {
+  width: 16px;
+  height: 16px;
 }
 .hero .hero__image__container .hero__image .hero__mark .mark__star__text {
   font-family: "Quicksand", sans-serif;
@@ -451,6 +526,10 @@ img {
   .hero .hero__image__container .hero__image .hero__mark .mark__stars .mark__stars__wrapper {
     display: flex;
   }
+  .hero .hero__image__container .hero__image .hero__mark .mark__stars .mark__stars__wrapper .star-image {
+    width: 24px;
+    height: 24px;
+  }
   .hero .hero__image__container .hero__image .hero__mark .mark__star__text {
     font-size: 12px;
   }
@@ -507,6 +586,7 @@ img {
   .hero .ball-right-2 {
     top: -10px;
     right: -60px;
+    display: block;
   }
   .hero .hero__image__container .hero__image {
     position: relative;
@@ -516,7 +596,7 @@ img {
   .hero .hero__image__container .hero__image .ball-left-2 {
     top: 180px;
     left: 50px;
-    z-index: 100;
+    display: block;
   }
 }
 .service {
@@ -551,6 +631,10 @@ img {
   letter-spacing: 0.01em;
   color: #377dff;
 }
+.service__link .arrow {
+  width: 20px;
+  height: 24px;
+}
 .service__cards {
   display: flex;
   gap: 35px;
@@ -573,6 +657,10 @@ img {
 }
 .service__cards .service__card:hover {
   transform: scale(1.1);
+}
+.service__cards .service__card .service__card__icon {
+  width: 42px;
+  height: 42px;
 }
 .service__cards .service__card .card__image__container {
   display: flex;
@@ -700,13 +788,12 @@ img {
   color: #fff;
   background-color: #377dff;
 }
-.about-us__buttons .non-filled:hover svg {
-  fill: #377dff;
+.about-us__buttons .non-filled .video-icon {
+  width: 17px;
+  height: 17px;
+  stroke: #377dff;
 }
-.about-us__buttons .non-filled:hover .border {
-  stroke: #ffffff;
-}
-.about-us__buttons .non-filled:hover .triangle {
+.about-us__buttons .non-filled:hover .video-icon {
   stroke: #ffffff;
 }
 .about-us__image-container {
