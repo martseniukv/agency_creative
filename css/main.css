@@ -462,7 +462,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    margin-bottom: 211px;
+    margin-bottom: 200px;
   }
   .hero .hero__title {
     font-size: 64px;
@@ -1167,10 +1167,10 @@ img {
   }
 }
 @media screen and (min-width: 1140px) {
-  .testimonial {
+  .testimonial .container {
     position: relative;
   }
-  .testimonial .ellipses {
+  .testimonial .container .ellipses {
     display: block;
     width: 98px;
     height: 70px;
@@ -1178,13 +1178,13 @@ img {
     fill: #377dff;
     transform: rotate(15deg);
   }
-  .testimonial .ellipse__top {
-    top: 32px;
-    left: 214px;
+  .testimonial .container .ellipse__top {
+    top: -50px;
+    left: 100px;
   }
-  .testimonial .ellipse__bottom {
+  .testimonial .container .ellipse__bottom {
     bottom: 23px;
-    right: 93px;
+    right: -7px;
   }
 }
 .collaboration {
