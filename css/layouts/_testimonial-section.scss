@@ -168,24 +168,27 @@
 
   .testimonial {
 
-    position: relative;
-    .ellipses {
-      display: block;
-      width: 98px;
-      height: 70px;
-      position: absolute;
-      fill: #377dff;
-      transform: rotate(15deg);
-    }
+    .container {
+      position: relative;
 
-    .ellipse__top{
-      top: 32px;
-      left: 214px;
-    }
+      .ellipses {
+        display: block;
+        width: 98px;
+        height: 70px;
+        position: absolute;
+        fill: #377dff;
+        transform: rotate(15deg);
+      }
 
-    .ellipse__bottom{
-      bottom: 23px;
-      right: 93px;
+      .ellipse__top {
+        top: -50px;
+        left: 100px;
+      }
+
+      .ellipse__bottom {
+        bottom: 23px;
+        right: -7px;
+      }
     }
   }
 }
