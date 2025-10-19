@@ -21,7 +21,8 @@
       position: absolute;
       transform: translateX(-130%);
       transition: 1s ease;
-      background: #fff;
+      background: var(--main-background-color);
+      opacity: 0.9;
       z-index: 5;
       padding: 20px;
       box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
@@ -40,7 +41,7 @@
           justify-content: center;
 
           &:hover .nav__link {
-            color: #377dff;
+            color: var(--header-menu-link--hover-color);
           }
 
 
@@ -49,7 +50,7 @@
             font-size: 1.125rem;
             line-height: 1.33333;
             text-transform: capitalize;
-            color: #1d1d1d;
+            color: var(--header-menu-link-color);
             letter-spacing: 0.01em;
             width: 100%;
             text-align: center;
@@ -75,7 +76,18 @@
     .burger-menu-icon {
       width: 29px;
       height: 25px;
-      stroke: #1D1D1D;
+      stroke: var(--header-menu-link-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .header {
+    .header__content {
+
+      .nav__menu{
+        background: none;
+      }
     }
   }
 }
@@ -104,7 +116,7 @@
               display: block;
               position: absolute;
               width: 0;
-              background-color: #377dff;
+              background-color: var(--main-blue-color);
               height: 3px;
               transition: 0.4s;
               margin-top: 35px;
@@ -122,7 +134,7 @@
       }
       .menu__btn{
         display: block;
-        border: 1px solid #377dff;
+        border: 1px solid var(--header-menu-btn-border-color);
         border-radius: 24px;
         padding: 10px 35px;
 
@@ -130,10 +142,10 @@
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.01em;
-        color: #377dff;
+        color: var(--header-menu-btn-color);
         transition: 0.7s;
 
-        @include button-hover(#fff, #377dff);
+        @include button-hover(var(--header-menu-btn-hover-color), var(--header-menu-btn-hover-bg-color));
       }
       .burger {
         display: none;

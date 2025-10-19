@@ -48,3 +48,18 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
+//dark theme
+
+document.addEventListener("DOMContentLoaded", () => {
+    const body = document.body;
+    const currentHour = new Date().getHours();
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+        body.classList.toggle("dark-theme", savedTheme === "dark");
+    } else if (currentHour <= 7 || currentHour >= 18) {
+        body.classList.add("dark-theme");
+    }
+});

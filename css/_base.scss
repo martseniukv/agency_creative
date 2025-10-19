@@ -1,8 +1,49 @@
 
 
 :root{
-
   --main-grey-color: #464646;
+  --secondary-grey-color: #1d1d1d;
+  --main-background-color: #fff;
+  --main-blue-color: #377dff;
+
+
+  --header-menu-link-color: #1d1d1d;
+  --header-menu-link--hover-color: #377dff;
+
+  --header-menu-btn-color: #377dff;
+  --header-menu-btn-border-color: #377dff;
+  --header-menu-btn-hover-color: #ffffff;
+  --header-menu-btn-hover-bg-color: #377dff;
+
+  --button-color: #fff;
+  --button-bg-color: #377dff;
+  --button-hover-color: #377dff;
+  --button-hover-bg-color: #fff;
+
+  --button-video-color: #377dff;
+  --button-video-bg-color: #fff;
+  --button-video-border-color: #377dff;
+  --button-video-hover-color: #fff;
+  --button-video-hover-bg-color: #377dff;
+
+  --section-sub-title-color: #377dff;
+  --section-title-color: #1d1d1d;
+  --service-section-link-color: #377dff;
+
+  --arrow-color: #377dff;
+
+  --service-card-border-color: rgba(0, 0, 0, 0.1);
+
+  --portfolio-btn-color: #377dff;
+  --portfolio-btn-border-color: #377dff;
+  --portfolio-btn-hover-color: #ffffff;
+  --portfolio-btn-hover-bg-color: #377dff;
+
+  --testimonial-card-bg-color: #fff;
+  --testimonial-card-title-color: #377dff;
+  --testimonial-card-job-title-color: #464646;
+  --testimonial-owl-dots-bg-color: #377dff;
+
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -24,8 +65,50 @@ button {
   cursor: pointer;
 }
 
-body {
-  color: var(--main-grey-color);
+.dark-theme {
+
+  --main-grey-color: #e2e2e2;
+  --secondary-grey-color: #e2e2e2;
+  --main-blue-color: #377dff;
+  --main-background-color: #0E0E0E;
+
+  --header-menu-btn-color: #e2e2e2;
+  --header-menu-btn-border-color: #e2e2e2;
+  --header-menu-btn-hover-color: #0E0E0E;
+  --header-menu-btn-hover-bg-color: #e2e2e2;
+
+  --header-menu-link-color: #e2e2e2;
+  --header-menu-link--hover-color: #377dff;
+
+  --button-color: #000;
+  --button-bg-color: #fff;
+  --button-hover-color: #fff;
+  --button-hover-bg-color: #377dff;
+
+  --button-video-color: #fff;
+  --button-video-bg-color: #0e0e0f;
+  --button-video-border-color: #fff;
+  --button-video-hover-color: #0e0e0f;
+  --button-video-hover-bg-color: #fff;
+
+  --section-sub-title-color: #e2e2e2;
+  --section-title-color: #e2e2e2;
+
+  --service-section-link-color: #e2e2e2;
+  --arrow-color: #e2e2e2;
+  --service-card-border-color: rgba(256, 256, 256, 0.1);
+
+  --portfolio-btn-color: #e2e2e2;
+  --portfolio-btn-border-color: #e2e2e2;
+  --portfolio-btn-hover-color: #0E0E0E;
+  --portfolio-btn-hover-bg-color: #e2e2e2;
+
+  --testimonial-card-bg-color: #0b0f15;
+  --testimonial-card-title-color: #e2e2e2;
+  --testimonial-card-job-title-color: #e2e2e2;
+  --testimonial-owl-dots-bg-color: #e2e2e2;
+
+  background-color: var(--main-background-color);
 }
 
 img {
@@ -49,7 +132,7 @@ img {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.01em;
-  color: #377dff;
+  color: var(--section-sub-title-color);
   text-align: center;
   margin-bottom: 10px;
 
@@ -66,7 +149,7 @@ img {
   font-size: 24px;
   letter-spacing: 0;
   text-align: center;
-  color: #1d1d1d;
+  color: var(--section-title-color);
   margin-bottom: 35px;
 
   @media screen and (min-width: 768px){

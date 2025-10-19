@@ -8,7 +8,7 @@
 
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #e2e2e2;
   }
 
   &-logo__container {
@@ -21,7 +21,6 @@
       .logo-img {
         width: 187px;
         height: 88px;
-        fill: #ffffff;
       }
     }
   }
@@ -41,7 +40,7 @@
         font-size: 18px;
 
         line-height: 1.3;
-        color: #fff;
+        color: #e2e2e2;
 
         margin-bottom: 30px;
       }
@@ -58,7 +57,7 @@
             font-weight: 300;
             font-size: 16px;
             line-height: 1.3;
-            color: #fff;
+            color: #e2e2e2;
 
             &:hover {
               color: #377dff;
@@ -80,13 +79,13 @@
     }
 
     .social-item:hover .social-item__image {
-      color: #ffffff;
+      color: #e2e2e2;
     }
 
     .social-item__image {
       width: 36px;
       height: 36px;
-      fill: #ffffff;
+      fill: #e2e2e2;
       color: #383638;
       transition: 0.4s;
 
@@ -96,7 +95,7 @@
   .copy-right {
     font-weight: 400;
     font-size: 14px;
-    color: #fff;
+    color: #e2e2e2;
     text-align: center;
   }
 }

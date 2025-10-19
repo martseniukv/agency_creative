@@ -18,7 +18,7 @@
 
       line-height: 1.71429;
       letter-spacing: 0.01em;
-      color: #464646;
+      color: var(--main-grey-color);
     }
 
     .first__description {
@@ -49,10 +49,10 @@
 
     .filled {
       box-shadow: 0 4px 8px 0 rgba(55, 125, 255, 0.5);
-      background: #377dff;
-      color: #ffffff;
+      background: var(--button-bg-color);
+      color: var(--button-color);
 
-      @include button-hover(#377dff, #fff);
+      @include button-hover(var(--button-hover-color), var(--button-hover-bg-color));
     }
 
     .non-filled {
@@ -62,21 +62,22 @@
       justify-content: center;
       flex-direction: row;
       gap: 10px;
-      border: 0.70px solid #377dff;
-      color: #377dff;
+      border: 0.70px solid var(--button-video-border-color);
+      color: var(--button-video-color);
+      background-color: var(--button-video-bg-color);
 
-      @include button-hover(#fff, #377dff);
+      @include button-hover(var(--button-video-hover-color), var(--button-video-hover-bg-color));
 
       .video-icon {
         width: 17px;
         height: 17px;
-        stroke: #377dff;
+        stroke: var(--button-video-color);
       }
 
       &:hover {
 
         .video-icon {
-          stroke: #ffffff;
+          stroke: var(--button-video-hover-color);
         }
       }
     }
@@ -109,6 +110,7 @@
     img {
       margin: 0 auto;
       width: 100%;
+      border-radius: 15px;
     }
   }
 }
@@ -174,6 +176,10 @@
         left: inherit;
         bottom: 0;
         right: 0;
+      }
+
+      img {
+        border-radius: 24px;
       }
 
       .red__ellipses {

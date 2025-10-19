@@ -20,7 +20,7 @@
       padding: 40px 20px 40px 40px;
 
       box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.05);
-      background: #fff;
+      background: var(--testimonial-card-bg-color);
 
       .card__header {
 
@@ -31,6 +31,9 @@
 
         .header__image {
           width: 70px;
+          img {
+            border-radius: 100%;
+          }
         }
 
         .header__info {
@@ -39,14 +42,14 @@
             font-weight: 600;
             font-size: 18px;
             letter-spacing: 0.01em;
-            color: #377dff;
+            color: var(--testimonial-card-title-color);
             margin-bottom: 8px;
           }
 
           .job__title {
             font-size: 11px;
             letter-spacing: 0.01em;
-            color: #464646;
+            color: var(--testimonial-card-job-title-color);
           }
         }
       }
@@ -59,7 +62,7 @@
 
           line-height: 1.71429;
           letter-spacing: 0.01em;
-          color: #464646;
+          color: var(--main-grey-color);
           opacity: 0.8;
         }
       }
@@ -89,7 +92,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #377dff;
+        background-color: var(--testimonial-owl-dots-bg-color);
         margin: 10px;
         display: inline-block;
       }
@@ -110,56 +113,6 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-
-      .testimonial__card {
-
-        border-radius: 20px;
-        max-width: 380px;
-        padding: 40px 20px 40px 40px;
-
-        background: #fff;
-
-        .card__header {
-
-          display: flex;
-          align-items: center;
-          gap: 30px;
-          margin-bottom: 35px;
-
-          .header__image {
-            width: 70px;
-          }
-
-          .header__info {
-
-            .header__title {
-              font-weight: 600;
-              font-size: 18px;
-              letter-spacing: 0.01em;
-              color: #377dff;
-            }
-
-            .job__title {
-              font-size: 11px;
-              letter-spacing: 0.01em;
-              color: #464646;
-            }
-          }
-        }
-
-        .card__content {
-
-          .card__description {
-            font-weight: 400;
-            font-size: 14px;
-
-            line-height: 1.71429;
-            letter-spacing: 0.01em;
-            color: #464646;
-            opacity: 0.8;
-          }
-        }
-      }
     }
   }
 }
